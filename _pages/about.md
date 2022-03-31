@@ -1,11 +1,22 @@
 ---
-title: About Journal
+title: About The Community Linguist
 subtitle: A stunning personal blog Jekyll theme with an image-focused design.
 description: A stunning personal blog Jekyll theme with an image-focused design.
 featured_image: /images/demo/demo-portrait.jpg
 ---
 
-![](/images/demo/demo-landscape.jpg)
+The Community Linguist (TCL) is an online initiative that hopes to inspire awareness of languages, linguistics, and education among other social issues in the Philippines and beyond! We believe that linguistics as a social science should make sense to and help the people we serve.
+To make this happen, we aim to (a) publish public-friendly infographics about language-related matters and (b) hold various free knowledge building events such as Research Brainstorming Sessions and reading groups. In the future, we hope to create podcasts and feature both emerging and distinguished Filipino linguists!
+
+
+Our content will be in English, Tagalog, or both. Someday, we can add other named languages.
+
+Follow us on our social media platforms!
+
+Credits
+This project is managed by Wilfred Gabriel A. Gapas.
+The bust artwork was created by Noriel Beltran as a wonderful commission.
+
 
 ## Features
 
