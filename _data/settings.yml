@@ -1,7 +1,7 @@
 basic_settings:
   site_title: The Community Linguist
   site_tagline: A public effort to make awareness of language, linguistics, and education issues happen. 
-  favicon_image: /images/favicon.png
+  favicon_image: /images/tcl/logo.png
 
 header_settings:
   logo_image: 
