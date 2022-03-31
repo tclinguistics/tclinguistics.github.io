@@ -2,7 +2,7 @@
 title: About The Community Linguist
 subtitle: A stunning personal blog Jekyll theme with an image-focused design.
 description: A stunning personal blog Jekyll theme with an image-focused design.
-featured_image: /images/demo/demo-portrait.jpg
+featured_image: /images/tcl/page-bg/square-6.png
 ---
 
 The Community Linguist (TCL) is an online initiative that hopes to inspire awareness of languages, linguistics, and education among other social issues in the Philippines and beyond! We believe that linguistics as a social science should make sense to and help the people we serve.
