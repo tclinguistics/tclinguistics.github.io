@@ -6,7 +6,6 @@ featured_image: /images/tcl/page-bg/square-6.png
 ---
 ![](/images/tcl/banner.png)
 
-### 
 Hey there! 
 
 I'm... a linguist. A community linguist.
