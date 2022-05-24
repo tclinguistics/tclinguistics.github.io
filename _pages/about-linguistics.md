@@ -1,5 +1,5 @@
 ---
-title: About 
+title: About Linguistics
 subtitle: What is The Community Linguist? 
 description: This page contains the key information about The Community Linguist project in English. 
 featured_image: /images/tcl/page-bg/square-6.png
@@ -7,8 +7,6 @@ featured_image: /images/tcl/page-bg/square-6.png
 ![](/images/tcl/banner.png)
 
 ### What is the Community Linguist? Principles and aims of the initiative
-*The Community Linguist* is a broad initiative 
-
 *The Community Linguist* is a broad initiative to promote awareness of linguistic and sociocultural diversity in our communities. In so doing, we will share and question ideas about languages, communication, culture, and people. Since we believe that linguistic, educational, cultural, and sociopolitical issues - whether in the Philippines or elsewhere - are ultimately interrelated and have huge implications, it's unavoidable that we'll bring these matters to your attention. 
 
 Some of the activities that we (will) do include:
