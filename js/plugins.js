@@ -1,6 +1,6 @@
 //
 //
-// Journal JS
+// Duet JS
 //
 //
 

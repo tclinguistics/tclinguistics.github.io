@@ -26,6 +26,7 @@ $accent-color: {{ site.data.settings.color_settings.accent_color }};
 
 $overlay-background-color: {{ site.data.settings.color_settings.overlay_background_color }};
 $overlay-text-color: {{ site.data.settings.color_settings.overlay_text_color }};
+$overlay-accent-color: {{ site.data.settings.color_settings.overlay_accent_color }};
 
 $error-color: {{ site.data.settings.color_settings.error_color }};
 
@@ -47,18 +48,23 @@ $sitetitle-large: {{ site.data.settings.font_settings.site_title.large_size }}px
 $sitetitle-weight: {{ site.data.settings.font_settings.site_title.weight }};
 $sitetitle-spacing: {{ site.data.settings.font_settings.site_title.letter_spacing }}em;
 
-$sitetagline-small: {{ site.data.settings.font_settings.site_tagline.small_size }}px;
-$sitetagline-medium: {{ site.data.settings.font_settings.site_tagline.medium_size }}px;
-$sitetagline-large: {{ site.data.settings.font_settings.site_tagline.large_size }}px;
-$sitetagline-weight: {{ site.data.settings.font_settings.site_tagline.weight }};
-$sitetagline-spacing: {{ site.data.settings.font_settings.site_tagline.letter_spacing }}em;
-$sitetagline-lineheight: {{ site.data.settings.font_settings.site_tagline.line_height }};
-
 $menu-small: {{ site.data.settings.font_settings.menu.small_size }}px;
 $menu-medium: {{ site.data.settings.font_settings.menu.medium_size }}px;
 $menu-large: {{ site.data.settings.font_settings.menu.large_size }}px;
 $menu-weight: {{ site.data.settings.font_settings.menu.weight }};
 $menu-spacing: {{ site.data.settings.font_settings.menu.letter_spacing }}em;
+
+$grid-item-title-small: {{ site.data.settings.font_settings.grid_item_title.small_size }}px;
+$grid-item-title-medium: {{ site.data.settings.font_settings.grid_item_title.medium_size }}px;
+$grid-item-title-large: {{ site.data.settings.font_settings.grid_item_title.large_size }}px;
+$grid-item-title-weight: {{ site.data.settings.font_settings.grid_item_title.weight }};
+$grid-item-title-spacing: {{ site.data.settings.font_settings.grid_item_title.letter_spacing }}em;
+
+$grid-item-subtitle-small: {{ site.data.settings.font_settings.grid_item_subtitle.small_size }}px;
+$grid-item-subtitle-medium: {{ site.data.settings.font_settings.grid_item_subtitle.medium_size }}px;
+$grid-item-subtitle-large: {{ site.data.settings.font_settings.grid_item_subtitle.large_size }}px;
+$grid-item-subtitle-weight: {{ site.data.settings.font_settings.grid_item_subtitle.weight }};
+$grid-item-subtitle-spacing: {{ site.data.settings.font_settings.grid_item_subtitle.letter_spacing }}em;
 
 $h1-small: {{ site.data.settings.font_settings.h1.small_size }}px;
 $h1-medium: {{ site.data.settings.font_settings.h1.medium_size }}px;
@@ -120,16 +126,13 @@ $button-weight: {{ site.data.settings.font_settings.buttons.weight }};
 $button-spacing: {{ site.data.settings.font_settings.buttons.letter_spacing }}em;
 
 
-// Header
-$overlay-opacity: {{ site.data.settings.header_settings.overlay_opacity }};
-
-
 // Logo
 $logo-width: {{ site.data.settings.header_settings.logo_width }}px;
 $footer-logo-width: {{ site.data.settings.footer_settings.logo_width }}px;
 
 
 // Grid item
+$overlay-opacity: {{ site.data.settings.grid_settings.overlay_opacity }};
 $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 
 

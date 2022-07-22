@@ -1,4 +1,4 @@
-# Journal by JekyllThemes.io – License
+# Duet by JekyllThemes.io – License
 
 This license grants you, the purchaser, an ongoing, non-exclusive, worldwide license to make use of the theme. Read the rest of this license for the details that apply to your use of the theme.
 

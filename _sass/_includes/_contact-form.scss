@@ -8,26 +8,23 @@
 	background: $background-alt-color;
 	margin: 20px auto;
 	width: 100%;
+	max-width: 90%;
 	padding: 20px;
 
 	@include mq(tabletp) {
 		margin: 30px auto;
+		max-width: calc(70vw + 80px);
 		padding: 40px;
 	}
 
 	@include mq(tabletl) {
-		max-width: calc(80% + 80px);
+		max-width: calc(65vw + 80px);
 	}
 
 	@include mq(laptop) {
 		margin: 40px auto;
-		max-width: calc(75% + 100px);
+		max-width: calc(60vw + 100px);
 		padding: 50px;
-	}
-
-	@include mq(desktop) {
-		max-width: calc(70% + 120px);
-		padding: 60px;
 	}
 
 	&:first-child {

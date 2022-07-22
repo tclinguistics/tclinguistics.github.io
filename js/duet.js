@@ -1,6 +1,6 @@
 //
 //
-// Journal JS
+// Duet JS
 //
 //
 
@@ -17,7 +17,6 @@
 	var navTarget = $('body').attr('data-page-url');
 	var docTitle = document.title;
 	var History = window.History;
-	var featuredImage = $('.page__content').attr('data-image');
 
 	// State change event
 	History.Adapter.bind(window,'statechange',function(){
@@ -30,16 +29,16 @@
 		// Load the page
 		$('.page-loader').load( state.hash + ' .page__content', function() {
 
+			// Scroll to top
+			$( 'body, html' ).animate({
+				scrollTop: 0
+			}, 300);
+
 			// Find transition time
 			var transitionTime = 400;
 
 			// After current content fades out
 			setTimeout( function() {
-
-				// Scroll to top
-				$( 'body, html' ).animate({
-					scrollTop: 0
-				}, 0);
 
 				// Remove old content
 				$('.page .page__content').remove();
@@ -57,28 +56,8 @@
 				docTitle = $('.page__content').attr('data-page-title');
 				document.title = docTitle;
 
-				// Set featured image
-				var newFeaturedImage = $('.page__content').attr('data-image');
-
 				// Run page functions
 				pageFunctions();
-
-				// If it's not the same as the current image
-				if ( newFeaturedImage !== featuredImage ) {
-
-					// Update featured image variable
-					featuredImage = newFeaturedImage;
-
-					// Change and animate featured image
-					$('.header-image:not(.header-image--on)').css('background-image', 'url(' + featuredImage + ')');
-					$('.header-image:not(.header-image--on)').addClass('header-image--switch');
-
-					$('.header-image--switch').imagesLoaded( { background: true }, function() {
-						$('.header-image--on').removeClass('header-image--on');
-						$('.header-image--switch').addClass('header-image--on');
-						$('.header-image--switch').removeClass('header-image--switch');
-					});
-				}
 
 			}, transitionTime);
 
@@ -100,7 +79,7 @@
 			var thisTarget = $(this).attr('href');
 
 			// If we don't want to use ajax, or the link is an anchor/mailto/tel
-			if ( $(this).hasClass('js-no-ajax') || thisTarget.indexOf('#') >= 0 || thisTarget.indexOf('mailto:') >= 0 || thisTarget.indexOf('tel:') >= 0 ) {
+			if ($(this).hasClass('js-no-ajax') || thisTarget.indexOf('#') >= 0 || thisTarget.indexOf('mailto:') >= 0 || thisTarget.indexOf('tel:') >= 0) {
 
 				// Use the given link
 				window.location = thisTarget;
@@ -144,7 +123,23 @@
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Show content
 
 		// Wait until first image has loaded
-		$('.header-image').imagesLoaded( { background: true }, function() {
+		$('.page__content').find('img:first').imagesLoaded( function() {
+	
+			// Portfolio grid layout
+			$('.portfolio-wrap').imagesLoaded( function() {
+				$('.portfolio-wrap').masonry({
+					itemSelector: '.portfolio-item',
+					transitionDuration: 0
+				});
+			});
+
+			// Blog grid layout
+			$('.blog-wrap').imagesLoaded( function() {
+				$('.blog-wrap').masonry({
+					itemSelector: '.blog-post',
+					transitionDuration: 0
+				});
+			});
 
 			// Show the content
 			$('body').removeClass('loading');
@@ -159,6 +154,7 @@
 
 		// Switch active link states
 		$('.active-link').removeClass('active-link');
+
 		$('a[href="' + navTarget + '"]').addClass('active-link');
 
 
@@ -410,7 +406,7 @@
 			e.preventDefault();
 		}
 
-	});	
+	});
 	
 	
 	

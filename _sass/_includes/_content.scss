@@ -5,35 +5,6 @@
 // - - - - - - - - - - - - - - - - - -
 
 .intro {
-	margin-top: 0;
-	padding: 20px 0 0;
-
-	@include mq(tabletp) {
-		padding: 35px 0 0;
-	}
-
-	@include mq(tabletl) {
-		padding: 35px 40px 0;
-	}
-
-	@include mq(laptop) {
-		padding: 53px 60px 0;
-	}
-
-	.wrap {
-
-		@include mq(tabletl) {
-			max-width: 80%;
-		}
-
-		@include mq(laptop) {
-			max-width: 75%;
-		}
-
-		@include mq(desktop) {
-			max-width: 70%;
-		}
-	}
 	
 	h1 {
 		
@@ -43,79 +14,68 @@
 	}
 
 	p {
-		margin-top: 5px;
-		color: $text-light-color;
+
+	}
+}
+
+.content-wrap {
+
+	@include mq(tabletp) {
+		max-width: 90%;
+		margin: 0 auto;
 	}
 }
 
 .single {
-	margin-top: 0;
-	padding: 20px 0;
-	min-height: 100vh;
-
-	@include mq(tabletp) {
-		padding: 40px 0;
-	}
-
-	@include mq(tabletl) {
-		padding: 30px 40px 40px;
-	}
-
-	@include mq(laptop) {
-		padding: 40px 60px 60px;
-	}
 
 	h1, h2, h3, h4, h5, h6, p, ul, ol {
 		margin-left: auto;
 		margin-right: auto;
+		padding-left: 30px;
+		padding-right: 30px;
+		max-width: 500px;
 
 		@include mq(tabletp) {
+			padding-left: 0;
+			padding-right: 0;
+			max-width: 70%;
 		}
 
 		@include mq(tabletl) {
-			max-width: 80%;
+			max-width: 65%;
 		}
 
 		@include mq(laptop) {
-			max-width: 75%;
-		}
-
-		@include mq(desktop) {
-			max-width: 70%;
-		}
-	}
-
-	ul, ol {
-		ul, ol {
-			max-width: 100%;
-			padding-left: 25px;
+			max-width: 60%;
 		}
 	}
 
 	hr {
-		margin: 20px auto;
+		margin: 30px auto;
+		width: calc(100vw - 60px);
+		max-width: 440px;
 
 		@include mq(tabletp) {
 			margin-top: 40px;
 			margin-bottom: 40px;
+			margin-left: auto;
+			margin-right: auto;
 			width: auto;
+			max-width: 70%;
 		}
 
 		@include mq(tabletl) {
-			max-width: 80%;
+			max-width: 65%;
 		}
 
 		@include mq(laptop) {
-			max-width: 75%;
-		}
-
-		@include mq(desktop) {
-			max-width: 70%;
+			max-width: 60%;
 		}
 	}
 
 	blockquote,
 	figure {
+		max-width: 90%;
 		margin: 20px auto;
 
 		@include mq(tabletp) {
@@ -141,26 +101,31 @@
 		margin-top: 10px;
 	}
 
+	ul, ol {
+		ul, ol {
+			max-width: 100%;
+			padding-left: 25px;
+		}
+	}
+
 	.highlighter-rouge,
 	table {
 		margin: 20px auto;
 		width: 100%;
+		max-width: 90%;
 
 		@include mq(tabletp) {
 			margin: 30px auto;
+			max-width: 70%;
 		}
 
 		@include mq(tabletl) {
-			max-width: 80%;
+			max-width: 65%;
 		}
 
 		@include mq(laptop) {
 			margin: 40px auto;
-			max-width: 75%;
-		}
-
-		@include mq(desktop) {
-			max-width: 70%;
+			max-width: 60%;
 		}
 	}
 
@@ -196,7 +161,25 @@
 	.table-wrap {
 		display: block;
 		width: 100%;
+		max-width: 90%;
+		margin: 0 auto;
 		overflow-x: auto;
+
+		table {
+			max-width: 100%;
+		}
+
+		@include mq(tabletp) {
+			max-width: 70%;
+		}
+
+		@include mq(tabletl) {
+			max-width: 65%;
+		}
+
+		@include mq(laptop) {
+			max-width: 60%;
+		}
 	}
 
 	table {
@@ -221,10 +204,12 @@
 
 			@include mq(tabletp) {
 				padding: 15px;
+				font-size: $p-medium;
 			}
 
 			@include mq(laptop) {
 				padding: 20px;
+				font-size: $p-large;
 			}
 		}
 		
@@ -310,6 +295,7 @@
 .image-wrap,
 .video-wrap {
 	position: relative;
+	max-width: 90%;
 	margin: 20px auto;
 
 	@include mq(tabletp) {

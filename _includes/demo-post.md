@@ -1,8 +1,10 @@
+![](/images/demo/landscape-01.jpg)
+
+## Demo content
+
 This page is a demo that shows everything you can do inside portfolio and blog posts.
 
 We've included everything you need to create engaging posts about your work, and show off your case studies in a beautiful way.
-
-![](/images/demo/post-01.jpg)
 
 **Obviously,** we’ve styled up *all the basic* text formatting options [available in markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -45,22 +47,24 @@ You can throw in some horizontal rules too:
 Here's a really neat custom feature we added – galleries:
 
 <div class="gallery" data-columns="3">
-	<img src="/images/demo/post-05.jpg">
-	<img src="/images/demo/post-06.jpg">
-	<img src="/images/demo/post-07.jpg">
-	<img src="/images/demo/post-08.jpg">
-	<img src="/images/demo/post-09.jpg">
+	<img src="/images/demo/square-01.jpg">
+	<img src="/images/demo/portrait-02.jpg">
+	<img src="/images/demo/square-04.jpg">
+	<img src="/images/demo/square-03.jpg">
+	<img src="/images/demo/square-05.jpg">
+	<img src="/images/demo/landscape-05.jpg">
 </div>
 
 Inspired by the Galleries feature from WordPress, we've made it easy to create grid layouts for your images. Just use a bit of simple HTML in your post to create a masonry grid image layout:
 
 ```html
 <div class="gallery" data-columns="3">
-    <img src="/images/demo/post-05.jpg">
-    <img src="/images/demo/post-06.jpg">
-    <img src="/images/demo/post-07.jpg">
-    <img src="/images/demo/post-08.jpg">
-    <img src="/images/demo/post-09.jpg">
+    <img src="/images/demo/square-01.jpg">
+    <img src="/images/demo/portrait-02.jpg">
+    <img src="/images/demo/square-04.jpg">
+    <img src="/images/demo/square-03.jpg">
+    <img src="/images/demo/square-05.jpg">
+    <img src="/images/demo/landscape-05.jpg">
 </div>
 ```
 
@@ -77,21 +81,23 @@ Here's another gallery with only one column, which creates a carousel slide-show
 A nice little feature: the carousel only advances when it is in view, so your visitors won't scroll down to find it half way through your images.
 
 <div class="gallery" data-columns="1">
-	<img src="/images/demo/post-02.jpg">
-	<img src="/images/demo/post-03.jpg">
-	<img src="/images/demo/post-04.jpg">
+	<img src="/images/demo/landscape-02.jpg">
+	<img src="/images/demo/landscape-03.jpg">
+	<img src="/images/demo/landscape-04.jpg">
 </div>
 
 ### What about videos?
 
 Videos are an awesome way to show off your work in a more engaging and personal way, and we’ve made sure they work great on our themes. Just paste an embed code from YouTube or Vimeo, and the theme makes sure it displays perfectly:
 
-<iframe src="https://player.vimeo.com/video/203710832" width="640" height="288" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/148003889" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
 ---
 
 ## Pretty cool, huh?
 
-We've packed this theme with powerful features to show off your work. Why not put them to use on your new portfolio?
+We've packed this theme with powerful features to show off your work.
 
-<a href="https://jekyllthemes.io/theme/journal-personal-jekyll-theme" class="button button--large">Get This Theme</a>
+Why not put them to use on your new portfolio?
+
+<a href="https://jekyllthemes.io/theme/duet-portfolio-jekyll-theme" class="button button--large">Get This Theme</a>
